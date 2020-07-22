@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: #d9d9d9;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+.header {
+  top:0px;
+  height: 100px;
+  width: 100%;
+  background-color:#e75480; 
+  float: center;
+  position: fixed;
+}
+.header h1{
+  align-self: center;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  padding:20px;
+}
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: black;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: black;
+}
+#section1
+{
+  height: 700px;
+  background:black;
+  display:table;
+  width:100%;
+  padding:120px;
+
+}
+#section2{
+  height: 700px;
+  background:black;
+  display:fixed;
+  width:100%;
+  padding:120px;
+}
+#section3{
+  height: 700px;
+  background:black;
+  display:fixed;
+  width:100%;
+  padding:120px;
+}
+#section4{
+  height: 700px;
+  background:black;
+  display:fixed;
+  width:100%;
+  padding:120px;
+}
+#section5{
+  height: 700px;
+  background:black;
+  display:fixed;
+  width:100%;
+  padding:120px;
+}
+#section6{
+  bottom: 0px;
+  width: 100%;
+  height: 300px;
+  background: #e75480;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: grey;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: black;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: grey;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.gallery .desc .fab{
+  font-size: 1.4375rem;
+  background: green;
+  color: white;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.gallery .desc button{
+  background: #e75480;
+  font-family: sofia;
+  height: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+
+}
+.gallery .desc button:hover{
+  background-color: grey;
+}
+.center .content .fas:hover{
+  background: grey;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: black;
+}
+.right form .msg{
+  margin-top: 10px;
+  width: 100%;
+}
+.right form input, .right form .msgForm{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: white;
+  padding-left: 10px;
+  border: 1px solid #111;
+  color: black;
+}
+.right form input:focus,
+.right form .msgForm:focus{
+  outline-color:#111;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: black;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: grey;
+}
+
+@media screen and (max-width: 768px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+#section6 .footer-bottom{
+  background:#343a40;
+  color:#686868;
+  height: 30px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  
+
+}
+nav a:hover{
+  background:#E75480;
+  transition: 0.5s;
+}
+nav{
+  width:100%;
+  background-color: #5C5858;
+  position:fixed;
+  overflow: hidden;
+  top:100px;
+  text-decoration: none;
+}
+
+li{
+  float: right;
+
+}
+a{
+  top:60px;
+  padding: 20px;
+  width: 100%;
+  display: inline-block;
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
