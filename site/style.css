@@ -1,0 +1,438 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Libre Baskerville', serif;
+font-family: 'Lobster Two', cursive;
+font-family: 'Noto Sans JP', sans-serif;
+
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+nav{
+	flex:1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+nav a{
+	text-decoration: none;
+	color: #e75480;
+}
+
+nav p{
+	color: #e75480;
+}
+.container{
+	max-width: 1300px;
+	margin:auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.col-2 h1{
+	color:white;
+}
+.col-2 p{
+	color: white;
+
+}
+.col-2{
+	flex-basis: 50%;
+	min-width: 300px;
+}
+.col-2 img{
+	max-width: 100%;
+	padding:10px 100px;
+	
+
+
+}
+.col-2 h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 20px 0px;
+}
+.btn{
+	display: inline-block;
+	background: #e75480;
+	color: black;
+	padding: 8px 30px;
+	margin: 30px 0px;
+	border-radius: 30px;
+	text-decoration: none;
+	transition: background 0.5s;
+}
+.btn:hover{
+	background-color: white; 
+}
+.header{
+	background: radial-gradient(grey,black);
+}
+.header .row{
+	margin-top: 10px;
+
+}
+.categories{
+	margin: 70px 0;
+}
+.col-3{
+	flex-basis: 30%;
+	min-width: 250px;
+	margin-bottom:30px;
+}
+.small-container{
+	max-width: 1080px;
+	margin:auto;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+.small-container h2{
+	text-align:center;
+}
+.col-4{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width:120px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+.col-4 img{
+	width: 100%;
+
+	
+}
+.title{
+	text-align:center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+}
+.title:after{
+	content: '';
+	background: #e75480;
+	width:80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0px;
+	left:50%;
+	transform: translateX(-50%);
+
+}
+h4{
+	color: black;
+	font-weight: normal;
+}
+.col-4 p{
+	font-size: 14px;
+	color: black;
+}
+.rating{
+	color: orange;
+}
+.col-4:hover{
+	transform: translateY(-5px);
+}
+.col-4  button{
+  background: #e75480;
+  font-family: sofia;
+  height: 50px;
+  width: 70%;
+  border: none;
+  outline: none;
+  
+  border-radius: 20px;
+  
+  align-self: center;
+  
+  
+  flex-basis: 25%;
+	padding: 10px;
+	min-width:120px;
+	margin-bottom: 50px;
+
+	
+
+}
+.col-4 button:hover{
+  background-color: grey;
+}
+nav a:hover{
+  background:pink;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+  color: grey;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: grey;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: grey;
+}
+footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background: black;
+  position: relative;
+  color: white;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: black;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #e75480;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #e75480;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: grey;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #e75480;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: grey;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: white;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form .msgForm{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: white;
+  padding-left: 10px;
+  border: 1px solid grey;
+}
+.right form input:focus,
+.right form .msgForm:focus{
+  outline-color: white;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #e75480;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.footer .right form .btn button:hover{
+  background: grey;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  
+}
+.bottom center span{
+  color:white;
+  text-align: center;
+}
+.bottom center a{
+  color: #e75480;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+.menu{
+	
+	display: none;
+
+}
+
+@media only screen and (max-width:800px)
+{
+
+	nav ul{
+		position: absolute;
+		top: 110px;
+		left: 0;
+
+		background: black;
+		width: 100%;
+		overflow: hidden;
+		transition: max-height 0.5s;
+	}
+	nav ul li{
+		display: block;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 1px;
+	}
+	nav ul a{
+		color: white;
+
+	}
+	.menu{
+		display: block;
+		cursor: pointer;
+	}
+	
+	.row{
+		text-align: center;
+		
+	}
+	.col-2 {
+		flex:100%;
+		width: 150%;
+		align-self: center;
+
+
+	}
+	.col-4{
+		flex:50%;
+		width: 80%;
+		align-self: center;
+
+	}
+
+}
+
+
+@media only screen and (max-width:400px)
+{
+	.row{
+		text-align: center;
+		
+	}
+	.col-2 {
+		flex:100%;
+		width: 200%;
+		align-self: center;
+	}
+	.col-4{
+		flex:100%;
+		width: 80%;
+		align-self: center;
+
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
