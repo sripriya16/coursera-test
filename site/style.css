@@ -1,11 +1,7 @@
 *{
 	margin:0;
 	padding: 0;
-	box-sizing: border-box;
-	inline-size: max-content;
-inline-size: min-content;
-inline-size: fit-content(20em);
-inline-size: auto;
+	
 }
 body{
 	font-family: 'Libre Baskerville', serif;
